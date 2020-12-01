@@ -54,8 +54,9 @@ body{
     flex-direction: column;
     justify-content: flex-start;
 }
-#english_input{
+#english_input, .output{
     border:2px solid black;
+    box-shadow: 0 10px 30px rgb(210, 210, 210);
 }
 #english_input, .output_block{
     width:100%;
@@ -79,6 +80,7 @@ body{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-items: flex-end;
 }
 .translatebtn, #clearbtn{
     width:150px;
@@ -93,11 +95,16 @@ body{
     font-size: 0.9rem;
     padding: 0.1rem;
     width: max-content;
-    padding:0.5rem 1rem;
+    height: max-content;
+    padding:0.5rem 0.5rem;
     border:none;
     font-family: cursive;
     font-weight: 600;
     transition: all 0.25s ease-in-out;
+}
+.btn img{
+    width:120px;
+    height:120px;
 }
 .btn:hover{
     transform: translateY(-5px);
@@ -113,10 +120,8 @@ body{
     background-color: rgb(84, 96, 158);
     color:#121212
 }
-
-#translatepirate{
-    background-color: rgb(15, 15, 15);
-    color:white;
+#translateferb-latin{
+    background-color: #E41B25;
 }
 
 #clearbtn{
@@ -149,24 +154,25 @@ footer p{
     border-bottom: 3px solid rgb(84, 96, 158);
     color:black;
 }
+.about_group{
+    width:100vw;
+    padding:5vh 10vw;
+}
+.about_group img{
+    width:100%;
+    margin:2rem 0;
+
+}
 .about_group h1{
     font-size: 4rem;
     margin-bottom: 2rem;
     text-align: center;
 }
-
-.about_group ul{
-    list-style-type: none;
-}
-li{
-    font-size: 1.4rem;
-    margin-bottom: 1.5rem;
-}
-.mini li:nth-child(odd){
-    color:black;
+.about_group p{
+    font-size: 1.5rem;
 }
 
-.mini, .pirate{
+.mini, .pirate, .mandalorians, .ferb{
     display: none;
 }
 .pirate{
@@ -177,8 +183,24 @@ li{
 .pirate h1{
     border-bottom: 3px solid grey;
 }
-.pirate li:nth-child(even){
-    color:grey;
+
+.mandalorians{
+    background-color:rgb(84, 96, 158);
+    color: white;
+    font-family: 'Texturina', serif;
+}
+.mandalorians h1{
+    border-bottom: 3px solid black;
+
+}
+
+.ferb {
+    background-color: #E41B25;;
+    color:white;
+}
+.ferb h1{
+    color:yellow;
+    border-bottom: 3px solid white;
 }
 @media screen and (max-width:1250px){
     html{
