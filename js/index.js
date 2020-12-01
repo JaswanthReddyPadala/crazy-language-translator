@@ -36,8 +36,8 @@ translateminion.addEventListener("click", function handleEvent(){
     backdrop.style.backgroundRepeat = "no-repeat";
     main.style.background = "rgb(255, 255, 30)"
     main.style.color = "rgb(84, 96, 158)";
-    inputHeading.style.color = "rgb(255, 255, 30)";
-    outputHeading.style.color = "rgb(255, 255, 30)";
+    inputHeading.style.color = "rgb(84, 96, 158)";
+    outputHeading.style.color = "rgb(84, 96, 158)";
 
     main.style.fontFamily = "cursive";
     trans.style.fontFamily = "cursive";
